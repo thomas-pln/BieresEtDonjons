@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "Bières&Donjon",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}
