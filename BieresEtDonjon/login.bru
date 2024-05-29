@@ -1,0 +1,26 @@
+meta {
+  name: login
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://127.0.0.1:8000/api/auth/register/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "email": "tot@example.com",
+    "name": "tot",
+    "password": "azerty",
+    "password2": "azerty"
+  }
+}
+
+body:multipart-form {
+  name: toto
+  email: toto@toto.fr
+  password: azerty
+}
