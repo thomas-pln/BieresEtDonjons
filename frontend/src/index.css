@@ -12,7 +12,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-wbr
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -28,8 +28,6 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background: linear-gradient(rgb(21, 13, 107) 1.1%, rgb(188, 16, 80) 130.5%);
-  /*background: radial-gradient(circle at 0.8% 3.1%, rgb(255, 188, 224) 0%, rgb(170, 165, 255) 46%, rgb(165, 255, 205) 100.2%)*/
 }
 
 h1 {
