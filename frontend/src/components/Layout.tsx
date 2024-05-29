@@ -5,7 +5,7 @@ import Footer from "./Footer.tsx";
 
 const Layout: React.FC<{children: React.ReactNode}> = ({ children }) => {
     return (
-        <Box display="flex" flexDirection="column" minHeight="100vh" width="auto">
+        <Box display="flex" flexDirection="column" minHeight="100vh">
             <AppNavBar />
             <Container component="main" sx={{ flex: 1, mt: 8, mb: 2 }}>
                 {children}

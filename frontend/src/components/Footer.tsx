@@ -5,24 +5,22 @@ import { Box, Typography, Container, Grid, Link } from '@mui/material';
 const Footer: React.FC = () => {
     return (
         <Box
-            alignContent="center"
             sx={{
-                width: '100vw',
+                width: '100%',
                 py: 3,
-                background:'#03224c',
+                backgroundColor: 'primary.main',
                 color: 'white',
                 mt: 'auto',
             }}
         >
             <Container>
-                <Grid container spacing={4} width="auto">
+                <Grid container spacing={4}>
                     <Grid item xs={12} sm={6} md={4}>
                         <Typography variant="h6" gutterBottom>
-                            Bières & Donjon
+                            MyApp
                         </Typography>
                         <Typography variant="body2">
-                            Avec amour &copy; {new Date().getFullYear()} Bières & Donjon. <br/>
-                            All rights reserved.
+                            &copy; {new Date().getFullYear()} MyApp. All rights reserved.
                         </Typography>
                     </Grid>
                     <Grid item xs={12} sm={6} md={4}>
@@ -32,13 +30,19 @@ const Footer: React.FC = () => {
                         <Link href="/" color="inherit" sx={{ display: 'block', mb: 1 }}>
                             Home
                         </Link>
+                        <Link href="/login" color="inherit" sx={{ display: 'block', mb: 1 }}>
+                            Login
+                        </Link>
                     </Grid>
                     <Grid item xs={12} sm={6} md={4}>
                         <Typography variant="h6" gutterBottom>
                             Contact
                         </Typography>
                         <Typography variant="body2">
-                            Email: contact@bieres&donjon.fr
+                            Email: contact@myapp.com
+                        </Typography>
+                        <Typography variant="body2">
+                            Phone: +123 456 7890
                         </Typography>
                     </Grid>
                 </Grid>
