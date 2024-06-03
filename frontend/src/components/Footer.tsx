@@ -5,8 +5,9 @@ import { Box, Typography, Container, Grid, Link } from '@mui/material';
 const Footer: React.FC = () => {
     return (
         <Box
+            alignContent="center"
             sx={{
-                width: '100%',
+                width: '100vw',
                 py: 3,
                 backgroundColor: 'primary.main',
                 color: 'white',
@@ -14,13 +15,14 @@ const Footer: React.FC = () => {
             }}
         >
             <Container>
-                <Grid container spacing={4}>
+                <Grid container spacing={4} width="auto">
                     <Grid item xs={12} sm={6} md={4}>
                         <Typography variant="h6" gutterBottom>
-                            MyApp
+                            Bières & Donjon
                         </Typography>
                         <Typography variant="body2">
-                            &copy; {new Date().getFullYear()} MyApp. All rights reserved.
+                            Avec amour &copy; {new Date().getFullYear()} Bières & Donjon. <br/>
+                            All rights reserved.
                         </Typography>
                     </Grid>
                     <Grid item xs={12} sm={6} md={4}>
@@ -39,10 +41,7 @@ const Footer: React.FC = () => {
                             Contact
                         </Typography>
                         <Typography variant="body2">
-                            Email: contact@myapp.com
-                        </Typography>
-                        <Typography variant="body2">
-                            Phone: +123 456 7890
+                            Email: contact@bieres&donjon.fr
                         </Typography>
                     </Grid>
                 </Grid>
