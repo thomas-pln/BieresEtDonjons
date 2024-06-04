@@ -26,7 +26,7 @@ const HomePage: React.FC = () => {
         <MainContainer>
             <HeroSection>
                 <HeroText variant="h2">Bienvenue chez Bières & Donjon</HeroText>
-                <SubText variant="h5">Le lieu idéal pour se détendre et s'amuser entre amis</SubText>
+                <SubText variant="h5">Le lieu idéal pour se détendre et s'amuser entre amis !! ☺️ </SubText>
             </HeroSection>
             <Container>
                 <Section id="about">
