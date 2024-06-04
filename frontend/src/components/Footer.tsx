@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
             sx={{
                 width: '100vw',
                 py: 3,
-                backgroundColor: 'primary.main',
+                background:'#03224c',
                 color: 'white',
                 mt: 'auto',
             }}
@@ -31,9 +31,6 @@ const Footer: React.FC = () => {
                         </Typography>
                         <Link href="/" color="inherit" sx={{ display: 'block', mb: 1 }}>
                             Home
-                        </Link>
-                        <Link href="/login" color="inherit" sx={{ display: 'block', mb: 1 }}>
-                            Login
                         </Link>
                     </Grid>
                     <Grid item xs={12} sm={6} md={4}>
