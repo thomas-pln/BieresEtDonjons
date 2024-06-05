@@ -38,6 +38,7 @@ urlpatterns = [
     path('redoc/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
     path('api/games/', include("games.urls")),
     path('api/menu/', include("menu.urls")),
+    path('api/schedule/', include("schedule.urls"))
 ]
 
 if settings.DEBUG:

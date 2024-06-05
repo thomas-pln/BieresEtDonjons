@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'account',
     'games',
     'menu',
-    # 'schedule'
+    'schedule'
 ]
 
 MIDDLEWARE = [
