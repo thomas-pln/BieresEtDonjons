@@ -5,7 +5,7 @@ class Drink(models.Model):
     id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=30)
     price = models.IntegerField(default=0)
-    photo = models.ImageField(upload_to='drink_photos/', default='default.jpg')
+    photo = models.ImageField(upload_to='drink_photos/', default='drink_photos/default.png')
     is_soft = models.BooleanField(default=0)
 
     def __str__(self):
