@@ -7,7 +7,7 @@ const Layout: React.FC<{children: React.ReactNode}> = ({ children }) => {
     return (
         <Box display="flex" flexDirection="column" minHeight="100vh" width="auto">
             <AppNavBar />
-            <Container component="main" sx={{ flex: 1, mt: 8, mb: 2 }}>
+            <Container component="main" sx={{ flex: 1, mt: 15, mb: 2 }}>
                 {children}
             </Container>
             <Footer />
