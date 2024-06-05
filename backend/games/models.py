@@ -6,7 +6,7 @@ class Game(models.Model):
     name = models.CharField(max_length=30)
     description = models.CharField(max_length=255)
     photo = models.ImageField(upload_to='game_photos/', default='game_photos/default.png')
-    url_editor = models.CharField(max_length=255, null=True)
+    url_editor = models.CharField(max_length=255, null=True, blank=True)
 
     def __str__(self):
         return self.name
