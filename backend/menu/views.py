@@ -5,6 +5,7 @@ from .models import Drink
 from .serializers import DrinkSerializer
 from rest_framework.parsers import MultiPartParser, FormParser
 
+
 # Create your views here.
 class DrinkList(generics.ListCreateAPIView):
     queryset = Drink.objects.all()

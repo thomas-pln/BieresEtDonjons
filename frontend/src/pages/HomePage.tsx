@@ -21,14 +21,13 @@ const HomePage: React.FC = () => {
         fetchData()
     }, [])
 
-    // @ts-ignore
     return (
         <MainContainer>
             <HeroSection>
                 <HeroText variant="h2">Bienvenue chez Bières & Donjon</HeroText>
                 <SubText variant="h5">Le lieu idéal pour se détendre et s'amuser entre amis !! ☺️ </SubText>
             </HeroSection>
-            <Container>
+            <Container sx={{ mt: -15}}>
                 <Section id="about">
                     <Typography variant="h4">À Propos</Typography>
                     <Typography variant="body1">

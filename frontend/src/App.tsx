@@ -5,6 +5,8 @@ import Layout from './components/Layout';
 import HomePage from './pages/HomePage';
 import {AuthProvider} from "./provider/authProvider.tsx";
 import LoginPage from "./pages/account/LoginPage.tsx";
+import GamesPage from "./pages/GamesPage.tsx";
+import DrinkPage from "./pages/DrinkPage.tsx";
 
 const App: React.FC = () => {
     return (
@@ -14,6 +16,8 @@ const App: React.FC = () => {
                     <Routes>
                         <Route path="/" element={<HomePage/>}/>
                         <Route path="/login" element={<LoginPage/>}/>
+                        <Route path="/games" element={<GamesPage/>}/>
+                        <Route path="/drinks" element={<DrinkPage/>}/>
                     </Routes>
                 </Layout>
             </Router>
