@@ -7,6 +7,7 @@ import {AuthProvider} from "./provider/authProvider.tsx";
 import LoginPage from "./pages/account/LoginPage.tsx";
 import GamesPage from "./pages/GamesPage.tsx";
 import DrinkPage from "./pages/DrinkPage.tsx";
+import EventsPage from "./pages/EventsPage.tsx";
 
 const App: React.FC = () => {
     return (
@@ -18,6 +19,7 @@ const App: React.FC = () => {
                         <Route path="/login" element={<LoginPage/>}/>
                         <Route path="/games" element={<GamesPage/>}/>
                         <Route path="/drinks" element={<DrinkPage/>}/>
+                        <Route path="/events" element={<EventsPage/>}/>
                     </Routes>
                 </Layout>
             </Router>

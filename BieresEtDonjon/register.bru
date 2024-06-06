@@ -1,11 +1,11 @@
 meta {
-  name: login
+  name: register
   type: http
-  seq: 3
+  seq: 2
 }
 
 post {
-  url: http://127.0.0.1:8000/api/auth/login/
+  url: http://127.0.0.1:8000/api/auth/register/
   body: json
   auth: none
 }
@@ -13,7 +13,9 @@ post {
 body:json {
   {
     "email": "toto@example.com",
-    "password": "azerty"
+    "name": "toto",
+    "password": "azerty",
+    "password2": "azerty"
   }
 }
 

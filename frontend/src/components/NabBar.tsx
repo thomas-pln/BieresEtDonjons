@@ -13,6 +13,7 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import { Link } from 'react-router-dom';
 import Logo from '../assets/logo.gif';
+import {useAuth} from "../provider/authProvider.tsx";
 
 interface Page {
     tag: string;
@@ -23,14 +24,14 @@ const pages: Page[] = [
     { tag: 'Home', to: '/' },
     { tag: 'Jeux', to: '/games' },
     { tag: 'Carte', to: '/drinks' },
-    { tag: 'Evennements', to: '/events' }
+    { tag: 'Evenements', to: '/events' }
 ];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 const AppNavBar: React.FC = () => {
     const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
     const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(null);
-    const [isAuthenticated, ] = React.useState<boolean>(!!localStorage.getItem('token')); // Vérifie si un token est présent
+    const {isAuthenticated} = useAuth();
 
     const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
         setAnchorElNav(event.currentTarget);

@@ -1,14 +1,15 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, {useState} from 'react';
+import {useNavigate} from 'react-router-dom';
 import Container from '@mui/material/Container';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import {useAuth} from "../../provider/authProvider.tsx";
+import {loginToken} from "../../provider/b&dProvider.ts";
 
 const LoginPage: React.FC = () => {
-    const { login } = useAuth();
+    const {login} = useAuth();
     const navigate = useNavigate();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -17,9 +18,8 @@ const LoginPage: React.FC = () => {
     const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         try {
-            // Remplacez cette ligne par l'appel API réel pour l'authentification
-            const token = 'dummy-token';
-            login(token);
+            const tokens = await loginToken(email, password);
+            login(tokens);
             navigate('/');
         } catch (e) {
             setError('Invalid credentials');
@@ -39,7 +39,7 @@ const LoginPage: React.FC = () => {
                 <Typography component="h1" variant="h5">
                     Se Connecter
                 </Typography>
-                <Box component="form" onSubmit={handleSubmit} sx={{ mt: 1 }}>
+                <Box component="form" onSubmit={handleSubmit} sx={{mt: 1}}>
                     <TextField
                         variant="outlined"
                         margin="normal"
@@ -82,7 +82,7 @@ const LoginPage: React.FC = () => {
                         fullWidth
                         variant="contained"
                         color="primary"
-                        sx={{ mt: 3, mb: 2 }}
+                        sx={{mt: 3, mb: 2}}
                     >
                         Login
                     </Button>

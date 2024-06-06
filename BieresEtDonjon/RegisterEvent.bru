@@ -1,0 +1,15 @@
+meta {
+  name: RegisterEvent
+  type: http
+  seq: 9
+}
+
+post {
+  url: http://localhost:8000/api/schedule/registrations/create/1/
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE3NjMxOTI0LCJpYXQiOjE3MTc2MjgzMjQsImp0aSI6IjExMzYxMzM2NjhmYTRhOTdhYTdlNjViM2VjYzgxZDQ3IiwidXNlcl9pZCI6M30.RKk3dKDTQ4yqVOhiNsU4ImpUYiOS4g2_rNHojrg7CGo
+}

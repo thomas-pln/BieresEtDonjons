@@ -20,7 +20,7 @@ export const DrinkCard: React.FC<{ drink: Drink }> = ({drink}) => {
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
                         {drink.is_soft ? "Boisson sans alcool" : "Boisson alcoolisée"}
-                        {drink.prix ? " - " + drink.prix + "€" : ""}
+                        {" - " + drink.price + "€"}
                     </Typography>
                 </CardContent>
             </CardActionArea>

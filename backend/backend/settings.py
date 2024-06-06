@@ -151,3 +151,10 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 CORS_ORIGIN_WHITELIST = [
     "http://localhost:5173"
 ]
+
+APPEND_SLASH = False
+
+AUTHENTICATION_BACKENDS = (
+    'django.contrib.auth.backends.ModelBackend',  # or your custom backend
+    # other backends...
+)

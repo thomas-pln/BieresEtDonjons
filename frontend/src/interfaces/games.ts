@@ -4,6 +4,7 @@ export interface Game {
     name: string;
     description: string;
     photo: string;
+    url_editor: string;
 }
 
 export interface GameList {

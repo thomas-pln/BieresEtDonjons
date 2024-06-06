@@ -1,13 +1,16 @@
 import {Game} from "../../interfaces/games.ts";
-import {Card, CardActionArea, CardContent, CardMedia} from "@mui/material";
+import {Card, CardContent, CardMedia} from "@mui/material";
 import Typography from "@mui/material/Typography";
 import React from "react";
 
 export const GameCard: React.FC<{ game: Game }> = ({game}) => {
 
+    const handleClick = () => {
+        window.open(game.url_editor, "_blank");
+    }
+
     return (
-        <Card sx={{maxWidth: 345}}>
-            <CardActionArea>
+        <Card sx={{maxWidth: 345}} onClick={handleClick}>
                 <CardMedia
                     component="img"
                     height="140"
@@ -22,7 +25,6 @@ export const GameCard: React.FC<{ game: Game }> = ({game}) => {
                         {game.description}
                     </Typography>
                 </CardContent>
-            </CardActionArea>
         </Card>
     );
 }

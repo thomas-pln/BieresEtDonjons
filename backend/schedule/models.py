@@ -2,6 +2,7 @@ from django.db import models
 
 import account.models
 
+
 # Create your models here.
 class Event(models.Model):
     id = models.AutoField(primary_key=True)
@@ -12,6 +13,7 @@ class Event(models.Model):
 
     def __str__(self):
         return self.title
+
 
 class Registration(models.Model):
     id = models.AutoField(primary_key=True)
