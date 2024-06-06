@@ -7,7 +7,7 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
@@ -26,7 +26,7 @@ const pages: Page[] = [
     { tag: 'Carte', to: '/drinks' },
     { tag: 'Evenements', to: '/events' }
 ];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+const settings = ['Profile', 'Account', 'Logout'];
 
 const AppNavBar: React.FC = () => {
     const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
@@ -156,9 +156,9 @@ const AppNavBar: React.FC = () => {
                     {
                         isAuthenticated && (
                             <Box sx={{flexGrow: 0}}>
-                                <Tooltip title="Open settings">
+                                <Tooltip title="Autres">
                                     <IconButton onClick={handleOpenUserMenu} sx={{p: 0}}>
-                                        <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg"/>
+                                        <AccountCircleIcon fontSize={"large"} style={{fontSize: 60, color: '#ffffff'}}  />
                                     </IconButton>
                                 </Tooltip>
                                 <Menu

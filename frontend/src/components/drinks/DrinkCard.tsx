@@ -1,20 +1,20 @@
-import {Card, CardActionArea, CardContent, CardMedia} from "@mui/material";
+import { Card, CardActionArea, CardContent, CardMedia } from "@mui/material";
 import Typography from "@mui/material/Typography";
 import React from "react";
-import {Drink} from "../../interfaces/drinks.ts";
+import { Drink } from "../../interfaces/drinks.ts";
 
-export const DrinkCard: React.FC<{ drink: Drink }> = ({drink}) => {
+export const DrinkCard: React.FC<{ drink: Drink }> = ({ drink }) => {
 
     return (
-        <Card sx={{maxWidth: 345}}>
-            <CardActionArea>
+        <Card sx={{ display: 'flex', flexDirection: 'column', maxWidth: { xs: 345, md: 500 } }}>
+            <CardActionArea sx={{ display: 'flex', flexDirection: 'column' }}>
                 <CardMedia
                     component="img"
-                    height="140"
+                    sx={{ flex: 1, objectFit: 'cover', height: 'auto', width: '100%' }}
                     image={drink.photo}
                     alt={drink.name}
                 />
-                <CardContent>
+                <CardContent sx={{ flex: 0 }}>
                     <Typography gutterBottom variant="h5" component="div">
                         {drink.name}
                     </Typography>

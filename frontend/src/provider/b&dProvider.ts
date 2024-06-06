@@ -53,8 +53,28 @@ export const userEventRegister = async (eventId: number): Promise<{msg: string}>
         console.error("Error registering for event:", error);
         throw error;
     }
-
 }
+
+export const registerToken = async (name: string, email: string, password: string, password2: string): Promise<any> => {
+    try {
+        const response = await apiClient.post('/auth/register/', {
+            email,
+            name,
+            password,
+            password2
+        });
+        const tokens = {
+            access: response.data.token.access,
+            refresh: response.data.token.refresh
+        };
+        setAuthToken(tokens);
+        return tokens;
+    } catch (error) {
+        console.error("Error logging in:", error);
+        throw error;
+    }
+};
+
 
 export const loginToken = async (email: string, password: string): Promise<any> => {
     try {
@@ -66,9 +86,7 @@ export const loginToken = async (email: string, password: string): Promise<any> 
             access: response.data.token.access,
             refresh: response.data.token.refresh
         };
-        setAuthToken(tokens); // Use the access token for authentication
-        console.log(tokens)
-        console.log(response.data)
+        setAuthToken(tokens);
         return tokens;
     } catch (error) {
         console.error("Error logging in:", error);
@@ -86,3 +104,4 @@ export const setAuthToken = (tokens: {access: string, refresh: string} | null) =
         localStorage.removeItem('refresh_token');
     }
 };
+
