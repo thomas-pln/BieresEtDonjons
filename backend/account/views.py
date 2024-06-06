@@ -10,12 +10,13 @@ from .serializers import (
 )
 from .renderers import UserRenderer
 from rest_framework_simplejwt.tokens import RefreshToken
-from rest_framework.permissions import IsAuthenticated
+from rest_framework.permissions import IsAuthenticated, AllowAny
 from drf_yasg.utils import swagger_auto_schema
 
 
 def get_tokens_for_user(user):
     refresh = RefreshToken.for_user(user)
+
     return {
         'refresh': str(refresh),
         'access': str(refresh.access_token),
@@ -37,7 +38,6 @@ class UserRegistrationView(APIView):
 class UserLoginView(APIView):
     renderer_classes = [UserRenderer]
 
-    @swagger_auto_schema(request_body=UserLoginSerializer)
     def post(self, request, format=None):
         serializer = UserLoginSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)

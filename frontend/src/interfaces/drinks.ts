@@ -1,7 +1,7 @@
 export interface Drink {
     id: number;
     name: string;
-    prix: number;
+    price: number;
     photo: string;
     is_soft: boolean;
 }
