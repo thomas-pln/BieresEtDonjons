@@ -6,8 +6,8 @@ import account.models
 # Create your models here.
 class Event(models.Model):
     id = models.AutoField(primary_key=True)
-    title = models.CharField(max_length=30)
-    description = models.CharField(max_length=255)
+    title = models.CharField(max_length=50)
+    description = models.TextField()
     start_date = models.DateTimeField(auto_now=False, auto_now_add=False, verbose_name='Date et heure de début')
     end_date = models.DateTimeField(auto_now=False, auto_now_add=False, verbose_name='Date et heure de fin')
 

@@ -42,7 +42,7 @@ VALUES (1, 'The Witcher 3',
         'Wingspan is a competitive, medium-weight, card-driven, engine-building board game from Stonemaier Games. You are bird enthusiasts researchers, bird watchers, ornithologists, and collectors seeking to discover and attract the best birds to your network of wildlife preserves. Each bird extends a chain of powerful combinations in one of your habitats (actions). These habitats focus on several key aspects of growth:',
         'game_photos/default.png', 'https://www.stonemaiergames.com/games/wingspan'),
        (12, 'Ticket to Ride',
-        'With elegantly simple gameplay, Ticket to Ride can be learned in under 15 minutes. Players collect train cards, claim routes on the map, and try to connect the cities shown on their tickets to achieve victory. The original edition of Ticket to Ride is a cross-country train adventure where players collect train cards that enable them to claim railway routes connecting cities throughout North America. The longer the routes, the more points they earn.',
+        'With elegantly simple gameplay, Ticket to Ride can be learned in under 15 minutes. Players collect train cards, claim routes on the map, and try to connect the cities shown on their tickets to achieve victory. The original edition of Ticket to Ride is a cross-country train adventure where players collect train cards that enable them to claim railway routes connecting cities throughout North America.',
         'game_photos/default.png', 'https://www.daysofwonder.com/tickettoride/en/usa')
 ;
 
@@ -68,135 +68,30 @@ VALUES ('Coca-Cola', 2.5, 'drink_photos/default.png', true),
 ;
 
 INSERT INTO schedule_event (title, description, start_date, end_date)
-VALUES ('Tournoi de Catan', 'Participez à notre tournoi de jeux de société et remportez des prix passionnants!',
-        '2024-06-10T18:00:00Z', '2024-06-10T21:00:00Z'),
-       ('Découverte du jeu Azul', 'Venez découvrir le jeu Azul et apprenez à y jouer avec nos experts.',
-        '2024-06-11T17:00:00Z', '2024-06-11T19:00:00Z'),
-       ('Démonstration de Magic: The Gathering',
-        'Assistez à une démonstration de Magic: The Gathering et améliorez vos compétences.', '2024-06-12T16:00:00Z',
-        '2024-06-12T18:00:00Z'),
-       ('Cocktail de bienvenue',
-        'Rejoignez-nous pour un cocktail de bienvenue et rencontrez d autres amateurs de jeux.', '2024-06-13T19:00:00Z',
-        '2024-06-13T22:00:00Z'),
-       ('Dégustation de bières artisanales', 'Dégustez une sélection de bières artisanales avec notre sommelier.',
-        '2024-06-14T18:00:00Z', '2024-06-14T20:00:00Z'),
-       ('Soirée jeux de société', 'Apportez vos jeux préférés et partagez une soirée ludique avec nous.',
-        '2024-06-15T17:00:00Z', '2024-06-15T23:00:00Z'),
-       ('Tournoi de Scrabble', 'Mesurez-vous aux autres joueurs lors de notre tournoi de Scrabble.',
-        '2024-06-16T14:00:00Z', '2024-06-16T17:00:00Z'),
-       ('Présentation du jeu Terraforming Mars',
-        'Découvrez les stratégies du jeu Terraforming Mars avec nos animateurs.', '2024-06-17T16:00:00Z',
-        '2024-06-17T18:00:00Z'),
-       ('Atelier de peinture de figurines', 'Apprenez à peindre vos figurines lors de notre atelier.',
-        '2024-06-18T15:00:00Z', '2024-06-18T18:00:00Z'),
-       ('Soirée cocktails et jeux', 'Profitez de cocktails spéciaux et jouez à des jeux sélectionnés par notre équipe.',
-        '2024-06-19T20:00:00Z', '2024-06-19T23:00:00Z'),
-       ('Tournoi de Carcassonne', 'Participez à notre tournoi de Carcassonne et montrez vos compétences en stratégie.',
-        '2024-06-20T18:00:00Z', '2024-06-20T21:00:00Z'),
-       ('Découverte du jeu Wingspan',
-        'Apprenez à jouer à Wingspan avec nos animateurs lors de cette soirée découverte.', '2024-06-21T17:00:00Z',
-        '2024-06-21T19:00:00Z'),
-       ('Démonstration de jeux de rôle',
-        'Assistez à une démonstration de jeux de rôle et découvrez des univers fascinants.', '2024-06-22T15:00:00Z',
-        '2024-06-22T18:00:00Z'),
-       ('Soirée cocktails et dégustation de fromages',
-        'Savourez une combinaison de cocktails et de fromages sélectionnés par notre sommelier.',
-        '2024-06-23T20:00:00Z', '2024-06-23T23:00:00Z'),
-       ('Tournoi de 7 Wonders',
-        'Rejoignez notre tournoi de 7 Wonders et tentez de remporter le titre de meilleur bâtisseur.',
-        '2024-06-24T18:00:00Z', '2024-06-24T21:00:00Z'),
+VALUES
+('Tournoi de Catan', 'Participez à notre tournoi de jeux de société et remportez des prix passionnants!', '2024-06-10 18:00:00', '2024-06-10 21:00:00'),
+('Découverte du jeu Azul', 'Venez découvrir le jeu Azul et apprenez à y jouer avec nos experts.', '2024-06-11 17:00:00', '2024-06-11 19:00:00'),
+('Démonstration de Magic: The Gathering', 'Assistez à une démonstration de Magic: The Gathering et améliorez vos compétences.', '2024-06-12 16:00:00', '2024-06-12 18:00:00'),
+('Cocktail de bienvenue', 'Rejoignez-nous pour un cocktail de bienvenue et rencontrez d autres amateurs de jeux.', '2024-06-13 19:00:00', '2024-06-13 22:00:00'),
+('Dégustation de bières artisanales', 'Dégustez une sélection de bières artisanales avec notre sommelier.', '2024-06-14 18:00:00', '2024-06-14 20:00:00'),
+('Soirée jeux de société', 'Apportez vos jeux préférés et partagez une soirée ludique avec nous.', '2024-06-15 17:00:00', '2024-06-15 23:00:00'),
+('Tournoi de Scrabble', 'Mesurez-vous aux autres joueurs lors de notre tournoi de Scrabble.', '2024-06-16 14:00:00', '2024-06-16 17:00:00'),
+('Présentation du jeu Terraforming Mars', 'Découvrez les stratégies du jeu Terraforming Mars avec nos animateurs.', '2024-06-17 16:00:00', '2024-06-17 18:00:00'),
+('Atelier de peinture de figurines', 'Apprenez à peindre vos figurines lors de notre atelier.', '2024-06-18 15:00:00', '2024-06-18 18:00:00'),
+('Soirée cocktails et jeux', 'Profitez de cocktails spéciaux et jouez à des jeux sélectionnés par notre équipe.', '2024-06-19 20:00:00', '2024-06-19 23:00:00'),
+('Tournoi de Carcassonne', 'Participez à notre tournoi de Carcassonne et montrez vos compétences en stratégie.', '2024-06-20 18:00:00', '2024-06-20 21:00:00'),
+('Découverte du jeu Wingspan', 'Apprenez à jouer à Wingspan avec nos animateurs lors de cette soirée découverte.', '2024-06-21 17:00:00', '2024-06-21 19:00:00'),
+('Démonstration de jeux de rôle', 'Assistez à une démonstration de jeux de rôle et découvrez des univers fascinants.', '2024-06-22 15:00:00', '2024-06-22 18:00:00'),
+('Soirée cocktails et dégustation de fromages', 'Savourez une combinaison de cocktails et de fromages sélectionnés par notre sommelier.', '2024-06-23 20:00:00', '2024-06-23 23:00:00'),
+('Tournoi de 7 Wonders', 'Rejoignez notre tournoi de 7 Wonders et tentez de remporter le titre de meilleur bâtisseur.', '2024-06-24 18:00:00', '2024-06-24 21:00:00'),
 -- Juillet
-       ('Soirée jeux de société', 'Apportez vos jeux préférés et partagez une soirée ludique avec nous.',
-        '2024-07-15T17:00:00Z', '2024-07-15T23:00:00Z'),
-       ('Tournoi de Scrabble', 'Mesurez-vous aux autres joueurs lors de notre tournoi de Scrabble.',
-        '2024-07-16T14:00:00Z', '2024-07-16T17:00:00Z'),
-       ('Présentation du jeu Terraforming Mars',
-        'Découvrez les stratégies du jeu Terraforming Mars avec nos animateurs.', '2024-07-17T16:00:00Z',
-        '2024-07-17T18:00:00Z'),
-       ('Atelier de peinture de figurines', 'Apprenez à peindre vos figurines lors de notre atelier.',
-        '2024-07-18T15:00:00Z', '2024-07-18T18:00:00Z'),
-       ('Soirée cocktails et jeux', 'Profitez de cocktails spéciaux et jouez à des jeux sélectionnés par notre équipe.',
-        '2024-07-19T20:00:00Z', '2024-07-19T23:00:00Z'),
+('Soirée jeux de société', 'Apportez vos jeux préférés et partagez une soirée ludique avec nous.', '2024-07-15 17:00:00', '2024-07-15 23:00:00'),
+('Tournoi de Scrabble', 'Mesurez-vous aux autres joueurs lors de notre tournoi de Scrabble.', '2024-07-16 14:00:00', '2024-07-16 17:00:00'),
+('Présentation du jeu Terraforming Mars', 'Découvrez les stratégies du jeu Terraforming Mars avec nos animateurs.', '2024-07-17 16:00:00', '2024-07-17 18:00:00'),
+('Atelier de peinture de figurines', 'Apprenez à peindre vos figurines lors de notre atelier.', '2024-07-18 15:00:00', '2024-07-18 18:00:00'),
+('Soirée cocktails et jeux', 'Profitez de cocktails spéciaux et jouez à des jeux sélectionnés par notre équipe.', '2024-07-19 20:00:00', '2024-07-19 23:00:00'),
 -- Août
-       ('Tournoi de Carcassonne', 'Participez à notre tournoi de Carcassonne et montrez vos compétences en stratégie.',
-        '2024-08-20T18:00:00Z', '2024-08-20T21:00:00Z'),
-       ('Découverte du jeu Wingspan',
-        'Apprenez à jouer à Wingspan avec nos animateurs lors de cette soirée découverte.', '2024-08-21T17:00:00Z',
-        '2024-08-21T19:00:00Z'),
-       ('Démonstration de jeux de rôle',
-        'Assistez à une démonstration de jeux de rôle et découvrez des univers fascinants.', '2024-08-22T15:00:00Z',
-        '2024-08-22T18:00:00Z'),
-       ('Soirée cocktails et dégustation de fromages',
-        'Savourez une combinaison de cocktails et de fromages sélectionnés par notre sommelier.',
-        '2024-08-23T20:00:00Z', '2024-08-23T23:00:00Z'),
-       ('Tournoi de 7 Wonders',
-        'Rejoignez notre tournoi de 7 Wonders et tentez de remporter le titre de meilleur bâtisseur.',
-        '2024-08-24T18:00:00Z', '2024-08-24T21:00:00Z'),
--- Septembre
-       ('Tournoi de Catan', 'Participez à notre tournoi de jeux de société et remportez des prix passionnants!',
-        '2024-09-10T18:00:00Z', '2024-09-10T21:00:00Z'),
-       ('Découverte du jeu Azul', 'Venez découvrir le jeu Azul et apprenez à y jouer avec nos experts.',
-        '2024-09-11T17:00:00Z', '2024-09-11T19:00:00Z'),
-       ('Démonstration de Magic: The Gathering',
-        'Assistez à une démonstration de Magic: The Gathering et améliorez vos compétences.', '2024-09-12T16:00:00Z',
-        '2024-09-12T18:00:00Z'),
-       ('Cocktail de bienvenue',
-        'Rejoignez-nous pour un cocktail de bienvenue et rencontrez d autres amateurs de jeux.', '
-2024-09-13T19:00:00Z', '
-2024-09-13T22:00:00Z'),
-       ('Dégustation de bières artisanales', 'Dégustez une sélection de bières artisanales avec notre sommelier.', '
-2024-09-14T18:00:00Z', '
-2024-09-14T20:00:00Z'),
--- Octobre
-       ('Soirée jeux de société', 'Apportez vos jeux préférés et partagez une soirée ludique avec nous.', '
-2024-10-15T17:00:00Z', '
-2024-10-15T23:00:00Z'),
-       ('Tournoi de Scrabble', 'Mesurez-vous aux autres joueurs lors de notre tournoi de Scrabble.', '
-2024-10-16T14:00:00Z', '
-2024-10-16T17:00:00Z'),
-       ('Présentation du jeu Terraforming Mars',
-        'Découvrez les stratégies du jeu Terraforming Mars avec nos animateurs.', '
-2024-10-17T16:00:00Z', '
-2024-10-17T18:00:00Z'),
-       ('Atelier de peinture de figurines', 'Apprenez à peindre vos figurines lors de notre atelier.', '
-2024-10-18T15:00:00Z', '
-2024-10-18T18:00:00Z'),
-       ('Soirée cocktails et jeux', 'Profitez de cocktails spéciaux et jouez à des jeux sélectionnés par notre équipe.', '
-2024-10-19T20:00:00Z', '
-2024-10-19T23:00:00Z'),
--- Novembre
-       ('Tournoi de Carcassonne', 'Participez à notre tournoi de Carcassonne et montrez vos compétences en stratégie.', '
-2024-11-20T18:00:00Z', '
-2024-11-20T21:00:00Z'),
-       ('Découverte du jeu Wingspan',
-        'Apprenez à jouer à Wingspan avec nos animateurs lors de cette soirée découverte.', '
-2024-11-21T17:00:00Z', '
-2024-11-21T19:00:00Z'),
-       ('Démonstration de jeux de rôle',
-        'Assistez à une démonstration de jeux de rôle et découvrez des univers fascinants.', '
-2024-11-22T15:00:00Z', '
-2024-11-22T18:00:00Z'),
-       ('Soirée cocktails et dégustation de fromages',
-        'Savourez une combinaison de cocktails et de fromages sélectionnés par notre sommelier.', '
-2024-11-23T20:00:00Z', '
-2024-11-23T23:00:00Z'),
-       ('Tournoi de 7 Wonders',
-        'Rejoignez notre tournoi de 7 Wonders et tentez de remporter le titre de meilleur bâtisseur.', '
-2024-11-24T18:00:00Z', '
-2024-11-24T21:00:00Z'),
--- Décembre
-       ('Tournoi de Catan', 'Participez à notre tournoi de jeux de société et remportez des prix passionnants!', '
-2024-12-10T18:00:00Z', '
-2024-12-10T21:00:00Z'),
-       ('Découverte du jeu Azul', 'Venez découvrir le jeu Azul et apprenez à y jouer avec nos experts.', '
-2024-12-11T17:00:00Z', '
-2024-12-11T19:00:00Z'),
-       ('Démonstration de Magic: The Gathering',
-        'Assistez à une démonstration de Magic: The Gathering et améliorez vos compétences.', '
-2024-12-12T16:00:00Z', '
-2024-12-12T18:00:00Z'),
-       ('Cocktail de bienvenue',
-        'Rejoignez-nous pour un cocktail de bienvenue et rencontrez d autres amateurs de jeux.', '2024-12-13T19:00:00Z',
-        '2024-12-13T22:00:00Z'),
-       ('Dégustation de bières artisanales', 'Dégustez une sélection de bières artisanales avec notre sommelier.',
-        '2024-12-14T18:00:00Z', '2024-12-14T20:00:00Z');
+('Tournoi de Carcassonne', 'Participez à notre tournoi de Carcassonne et montrez vos compétences en stratégie.', '2024-08-20 18:00:00', '2024-08-20 21:00:00'),
+('Découverte du jeu Wingspan', 'Apprenez à jouer à Wingspan avec nos animateurs lors de cette soirée découverte.', '2024-08-21 17:00:00', '2024-08-21 19:00:00'),
+('Démonstration de jeux de rôle', 'Assistez à une démonstration de jeux de rôle et découvrez des univers fascinants.', '2024-08-22 15:00:00', '2024-08-22 18:00:00'),
+('Soirée cocktails et dégustation de fromages', 'Savourez une combinaison de cocktails et de fromages sélectionnés par notre sommelier.', '2024-08-23 20:00:00', '2024-08-23 23:00:00');
